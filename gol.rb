@@ -12,7 +12,8 @@ class Gol < Formula
     bin.install Dir["files"]
     prefix.install "README.md"
     prefix.install "LICENSE"
-    system "make", "install"
+    system "make"
+    prefix.install "bin/gol"
   end
 
   test do
