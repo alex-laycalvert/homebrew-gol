@@ -11,8 +11,8 @@ class Gol < Formula
     prefix.install "README.md"
     prefix.install "LICENSE"
     system "make"
-    system "ls -l ./bin"
     system "ls -l ./build"
+    system "ls -l ./bin"
     system "ls -l ./"
     # prefix.install "bin/gol"
   end
