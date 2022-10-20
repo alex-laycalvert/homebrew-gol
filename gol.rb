@@ -9,8 +9,6 @@ class Gol < Formula
 
   def install
     prefix.install Dir["examples"]
-    prefix.install "README.md"
-    prefix.install "LICENSE"
     system "make"
     bin.install "bin/gol"
   end
