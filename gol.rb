@@ -8,12 +8,11 @@ class Gol < Formula
   uses_from_macos "ncurses"
 
   def install
-    bin.install Dir["lib"]
-    bin.install Dir["files"]
     prefix.install "README.md"
     prefix.install "LICENSE"
     system "make"
-    prefix.install "bin/gol"
+    system "ls -l"
+    # prefix.install "bin/gol"
   end
 
   test do
