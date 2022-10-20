@@ -9,7 +9,7 @@ class Gol < Formula
 
   def install
     system "make"
-    system "ls -la"
+    bin.install "bin/gol"
   end
 
   test do
