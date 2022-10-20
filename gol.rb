@@ -8,7 +8,8 @@ class Gol < Formula
   uses_from_macos "ncurses"
 
   def install
-    system "make install"
+    system "make"
+    system "ls -la"
   end
 
   test do
